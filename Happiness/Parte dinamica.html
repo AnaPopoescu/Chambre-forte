@@ -1,0 +1,250 @@
+<!doctype html>
+<html style="width: 1530px">
+<head>
+	
+	<meta charset="utf-8">
+   <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel = "stylesheet">
+        <link rel = "stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
+        <style media = "screen">
+        *,
+        :before,:after
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+	   html, body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background: linear-gradient(-45deg,#660033, #cc0044, #ffb3cc, #006699, #006699,#006699, #006699,#005580,#005580,#005580, #ff80aa, #ff1a66, #660033);
+    background-size: 150% 150%;
+    animation: gradient 7.5s infinite;
+}
+@keyframes gradient
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cc99ff;
+  position: sticky;
+	top: 0;
+  z-index: 5;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #F04EF0;
+}
+	   
+li:last-child
+{
+	border-left:none;
+}
+	   
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #b3ffff;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+form
+        {
+            z-index: 3;
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255,255,255,0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 20px 35px;
+        }
+        form *
+        {
+            font-family: 'Poppins', sans-serif;
+            color: #c4a3f9;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+        form h3
+        {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+        label
+        {
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        input
+        {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255,255,255,0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        ::placeholder
+        {
+            color: #99004d;
+        }
+        .button_log
+        {
+            margin-top: 50px;
+            width: 100%;
+            background-color: #ffb3b3;
+            color: hwb(247 3% 94%);
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 725ms ease-in-out;
+        }
+        .button_log:hover
+        {
+            background-color: #ffd6cc;
+            -webkit-box-shadow: 10px 10px 99px 6px rgba(126, 85, 193, 1);
+            -moz-box-shadow: 10px 10px 99px 6px rgba(126, 85, 193, 1);
+            box-shadow: 10px 10px 99px 6px rgba(126, 85, 193, 1);
+        }
+        .social
+        {
+            margin-top: 30px;
+            display: flex;
+            cursor: pointer;
+        }
+        .social div
+        {
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.149);
+            color: #e6004c;
+            text-align: center;
+            transition: all 665ms ease-in-out;
+        }
+        .social div:hover
+        {
+            background-color: #99004d;
+            -webkit-box-shadow: 10px 10px 99px 6px rgba(87, 50, 146, 1);
+            -moz-box-shadow: 10px 10px 99px 6px rgba(87, 50, 146, 1);
+            box-shadow: 10px 10px 99px 6px rgba(56, 51, 145, 2);
+        }
+        .social .fb
+        {
+            margin-left: 25px;
+        }
+        .social i
+        {
+            margin-right: 4px;
+        }
+        .close
+        {
+            float: right;
+            cursor: pointer;
+            font-size: 200%;
+            transition: all 435ms ease-in-out;
+        }
+        .close:hover
+        {
+            transform: scale(1.35);
+        }</style>
+<title>Sign In</title>
+<meta charset="utf-8">
+<title>Sign In</title>
+</head>
+<script type="text/javascript">
+	function redirectFunc()
+	{
+		window.location.replace("index.html");
+	}
+	function Nick_Name()
+	{
+		let Nickname=document.getElementById("username").value;
+		alert("Have a great day " + Nickname);
+		
+	}
+	</script>
+<body>
+<body>
+        <span id = "result">
+        </span>
+        <form>
+            <div class = "close" onclick = "redirectFunc ()" title = "Click to exit the form!">
+                <i class = "far fa-times-circle" style = "color: #bf4080">
+                </i>
+            </div>
+            <br>
+            <h3>
+                Sign In
+            </h3>
+            <label for = "username">
+                Username
+            </label>
+            <input type = "text" placeholder = "Nickname" id = "username">
+            <label for = "password">
+                Password
+            </label>
+            <input type = "password" placeholder = "Password" id = "password">
+            <div class = "button_log" onclick = "Nick_Name ()">
+                Sign In
+            </div>
+            <div class = "social">
+                <div class = "go">
+                    <i class = "fab fa-google">
+                    </i>
+                    Google
+                </div>
+                <div class = "fb">
+                    <i class = "fab fa-facebook">
+                    </i>
+                    Facebook
+                </div>
+            </div>
+        </form>
+    </body>
