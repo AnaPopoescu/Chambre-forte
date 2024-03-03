@@ -1,0 +1,201 @@
+<!doctype html>
+<html style="width: 1530px">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  margin: 8px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ECC2E8;
+	position: sticky;
+	top: 0;
+  z-index: 5;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #ED54DE;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #b3ffff;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+<meta charset="utf-8">
+<title>Activities</title>
+</head>
+
+<body  style="background-color: #d6f5f5">
+		
+	<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="information.html">Information</a></li>
+  <li><a href="scientific data.html">Scientific data</a></li>
+  <li><a href="activities.html">Activities</a></li>
+  <li><a href="contact.html">Contact</a></li>
+		<li><a href="Parte dinamica.html">Sign In</a></li>
+</ul>
+	<center><h1>Did you asked yourself what are the activities that makes your heart beats faster? </h1></center>
+	<br>
+	<h2>&emsp;I will tell you some of them so you can practice outside &#127386; inside the house depending on what you like!</h2>
+	<h3 style="color:#ff80aa; font-size: 30px">&ensp;Let's start with the indoor activities &#127378;</h3><br>
+	<p1 style="font-size: 19px;">&nbsp;Whether it’s due to bad weather  &#9889;, an unexpected school closure &#127891;, or some other reason, once you’re indoors,you don't have to waste your energy &#127774; because there are so many funny things you can do </p1>
+	<br><br>
+	<center><p2 style="font-size: 17px;">For exemple, even it's the oldest idea in the book, but if you really want some screen-free family time &#128157;, old-fashioned board games still do the trick. Get your competitive spirit up and get ready to play &#128244; All you need is some popcorn &#127871;, juice &#127865; and much fun!! </p2></center>
+	<br>
+	
+	<div class="row">
+  <div class="column">
+    <img src="imagini/gh-021022-family-board-games-1644596644.png" alt="Board games" style="width:90%" style="lenght:60%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="imagini/monopoly.jpg" alt="Monopoly" style="width:60%" style="lenght:60%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="imagini/catan.jpg" alt="Catan" style="width:70%" style="lenght:60%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="imagini/activity.jpg" alt="Activity" style="width:60%" style="lenght:60%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+	<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+	
+	<br>
+	<center><p style="font-size: 17px;">But there are more than just these games: you can diy your own masterpieces if you like to make something homemade OR it's a useful idea to bake and decorate the cookies/brownies &#127850; because indoor days are the perfect time to try and get creative in the kitchen.&#129360; Whip up some kind of make-your-own dessert bar by putting out toppings (frosting, sprinkles, M&Ms). &#129372;</p></center>
+	<img src="imagini/bratari de prietenie.png" style="width:200px;height:300px;">&nbsp;
+	<img src="imagini/frunze.jpeg" style="width:200px;height:300px;">&nbsp;
+	<img src="imagini/hoodie.jpeg" style="width:200px;height:300px;">&nbsp;
+	<img src="imagini/decora prajituri.jpg" style="width:200px;height:300px;">&nbsp;
+	<img src="imagini/pictura.jpeg" style="width:200px;height:300px;">&nbsp;
+	<img src="imagini/color-scavenger-hunt-1586179557.jpg" style="width:200px;height:300px;">&nbsp;
+	<img src="imagini/pizza.jpg" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/cookies.jpg" style="width:300px;height:300px;">&nbsp;
+	<center><p style="font-size: 19px;">And one of the funniest activity is DANCE!! Choose a playlist and move on the beat.&#128131;</p></center>
+	
+	<img src="imagini/dance.jpg" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/dansuri.png" style="width:300px;height:300px;">&nbsp;
+	
+		
+	<center><p>Others ideas are learn a new skill, make a puzzle, play with the science, read a book, make a hunt, play karaoke &#127908; or if you like video games, try a new and productive one!</p><center>
+		<br>
+	<img src="imagini/science experiment.png" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/puzzle.jpg" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/mini vulcani.jpg" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/slime.jpg" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/a new skill.jpg" style="width:300px;height:300px;">&nbsp;
+	<img src="imagini/book.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/vanatoare de obiecte.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/karaoke.jpg" style="width:300px;height:200px;">&nbsp;
+	<br>
+		
+	<h3 style="color:#ff80aa; font-size: 30px">  &#127381; There are also the outdoor activities and fortunately you can choose from a much wider range &#127912;</h3>
+	<h5 style="font-size: 17px;">Depending on your area, there are likely some outdoor activities &#127795; you can safely partake in, which can help give you a much-needed mental reset</h5>
+	<center><p style="font-size: 18px;">You can start with basic sports, for example the next sports: volleyball &#127952;, baseball  &#127944;, football &#129349;, badminton  &#127934;, basketball &#127936;, bowling &#127923;, cycling , tennis &#127955;. There are always a good choice and you can enjoy it with your friends because these sports require a larger group of people.</p></center>
+	<img src="imagini/baseball.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/basket.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/bawling.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/volleyball.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/tennis.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/cyclingjpg.jpg" style="width:300px;height:200px;">&nbsp;
+	<br><br>
+	<center><p1  style="font-size: 18px;">But if you are more like a nature person you can try paintball (it's a good sport also if you like to paint or art in general) or camping with the loved ones &#128145;. A good walk in nature is so refreshing even it's simple activity. And for those who love the land or want to really feel it, a good activity gardening especially because you get rid of stress and you can grow your own fruits &#127826;/ vegetables &#127813;</p1></center>
+	<br><br>
+	<img src="imagini/gardening.jpg" style="width:200px;height:200px;">&nbsp;
+	<img src="imagini/walk in  nature.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/vegetables.jpg" style="width:300px;height:200px;">&nbsp;
+	<br>
+	<center><p style="font-size: 18px;">&ensp;If you are more like an adventurous person &#129336; and you don't have the feeling to control the situation, a good outdoor activity is swimming &#127946;, ice climbing, surfing &#127754;, canoeing, skiing &#127935; etc.&#127940; </p></center>
+	<br>
+	<img src="imagini/canoeing.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/ice climbing.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/skiing.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/surfing.jpg" style="width:300px;height:200px;">&nbsp;
+	<img src="imagini/swimming.jpg" style="width:300px;height:200px;">&nbsp;
+	<p style="color: #264d73">People inspire you, or they drain you - pick them wisely.</p>
+</body>
+</html>
